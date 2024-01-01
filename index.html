@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Blog Platform</h1>
+        <div id="postList"></div>
+        <button onclick="openPostEditor()">Create New Post</button>
+        <div id="postEditor" style="display: none;">
+            <h2 id="editorTitle">Create New Post</h2>
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" required>
+            <label for="postContent">Content:</label>
+            <textarea id="postContent" required></textarea>
+            <button onclick="savePost()">Save Post</button>
+            <button onclick="cancelPostEditor()">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
